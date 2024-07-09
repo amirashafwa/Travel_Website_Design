@@ -1,0 +1,309 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 30px;
+}
+
+
+
+/*navigasi*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.logo {
+    font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
+}
+.logo span {
+    color: saddlebrown;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li {
+    list-style-type: none;
+    padding: 10px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover {
+    color: saddlebrown;
+    font-weight: 700;
+}
+
+
+/*gambar header*/
+.gambar {
+    height: 350px;
+    background-image: url(gambar/header.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: 0 -250px;
+    border-top: 3px solid saddlebrown;
+    border-bottom: 3px solid skyblue;
+}
+.layer {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 60%;
+}
+.text {
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+.text p {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+
+}
+.text a{
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+.text a:hover {
+    background-color: brown;
+    color: white;
+}
+
+
+
+
+
+/*style home*/
+.judul {
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-style: normal;
+}
+.sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sub img {
+    height: 200px;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+}
+.sub a {
+    color: black;
+    text-decoration: none;
+}
+.sub a:hover {
+    font-weight: 700;
+}
+.tombol {
+    margin: 30px;
+    text-align: center;
+}
+.tombol a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    background-color: saddlebrown;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+.tombol a:hover {
+    background-color: black;
+}
+.footer {
+    background-color: #e8e8e8;
+}
+.keterangan {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+
+
+
+/*style destinasi*/
+.baris img {
+    height: 250px;
+}
+.baris .tombol {
+    margin-top: 150px;
+}
+.baris {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.subjudul-kiri, .subjudul-kanan {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    writing-mode: vertical-lr;
+}
+.subjudul-kiri {
+    transform: rotate(180deg);
+}
+.lokasi {
+    font-size: 15px;
+    font-weight: bold;
+}
+.lokasi p {
+    margin: 10px 0px;
+}
+.lokasi p a {
+    color: white;
+    background-color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.lokasi p a:hover {
+    background-color: saddlebrown;
+}
+
+
+
+
+
+/*style favorite*/
+.box {
+    width: 800px;
+    margin: auto;
+    padding-bottom: 20px;
+    box-shadow: 0px -10px 30px #ccc;
+}
+.cf img {
+    height: 200px;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    float: left;
+}
+.cf .lokasi {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.cf p {
+    margin: 20px;
+}
+.cf i {
+    font-weight: bold;
+}
+.cf span {
+    color: saddlebrown;
+}
+.deskripsi {
+    font-size: 15px;
+    text-align: justify;
+}
+.cf a {
+    color: white;
+    background-color: saddlebrown;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.cf a:hover {
+    background-color: black;
+}
+/*clear fix*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+
+
+
+
+/*style about*/
+.main .paragraf {
+    width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 100px 0px #ccc;
+    padding: 20px;
+    text-align: justify;
+}
+.paragraf p {
+    font-size: 20px;
+    margin: 20px;
+}
+.paragraf i {
+    font-weight: bold;
+}
+.paragraf span {
+    color: saddlebrown;
+}
+
+
+
+
+
+/*style kontak*/
+.main .p {
+    text-align: center;
+    color: brown;
+    margin-top: -15px;
+    text-transform: capitalize;
+}
+.isi {
+    display: flex;
+    justify-content: space-evenly;
+}
+.info, .form {
+    width: 350px;
+    background: white;
+    margin: 80px auto;
+    padding: 30px 20px;
+    box-shadow: 0px 0px 100px 4px #d6d6d6;
+}
+.input-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+.input-button {
+    background-color: saddlebrown;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
